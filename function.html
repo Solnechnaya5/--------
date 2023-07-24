@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <style>
+        h1 {
+            color: rebeccapurple;
+        }
+        
+        h2 {
+            color: green;
+        }
+        
+        h3 {
+            color: red;
+        }
+        
+        span {
+            color: blue;
+        }
+    </style>
+    <h1>JavaScript Functions</h1>
+
+    <!-- <h3>This example calls a function to convert from Fahrenheit to Celsius:</h3> -->
+    <!-- <p id="demo"></p> -->
+
+    <!-- <script>
+        function toCelsius(f) {
+            return (5 / 9) * (f - 32);
+        }
+        document.getElementById("demo").innerHTML = toCelsius(ptompt('input Fahrenheit', '');
+    </script> -->
+    <h3>Test 1</h3>
+    <p id="func"></p>
+    <script>
+        function nameUser() {
+            return ("Yulia");
+        }
+        document.getElementById("func").innerHTML = nameUser();
+    </script>
+    <h3>Test 2</h3>
+    <p>Your sum is: <span id="sum"></span></p>
+    <!-- <script>
+        let a = Number(prompt('enter a', ''));
+        let b = Number(prompt('enter b', ''));
+
+        function numbersSum() {
+            if (a > 0 && b > 0) {
+                return (a + b);
+            } else {
+                return (document.getElementById('sum').innerHTML = ('Try again'));
+            };
+        };
+        document.getElementById('sum').innerHTML = numbersSum();
+    </script> -->
+    <h3> Test 3</h3>
+    <p>Cube of your number is <span id="cube"></span></p>
+    <!-- <script>
+        function cube(a) {
+            return (document.getElementById("cube").innerHTML = a * a * a);
+        }
+        cube(10);
+    </script> -->
+    <h3>Test 4</h3>
+    <p>Result: <span id="res"></span></p>
+    <!-- <script>
+        function comparing(a) {
+            if (a > 0) {
+                document.getElementById("res").innerHTML = ("+++");
+            } else {
+                document.getElementById("res").innerHTML = ("---");
+            }
+        }
+        comparing(5);
+    </script> -->
+    <h3>Test 5</h3>
+    <p>Sum of 3 number is <span id="sum2"></span></p>
+    <!-- <script>
+        function sumOfThreeNumber(a, b, c) {
+            return a + b + c;
+        }
+        document.getElementById("sum2").innerHTML = sumOfThreeNumber(7, 10, 3);
+    </script> -->
+    <h3>Test 6</h3>
+    <p>Sum of 3 parameters is <span id="sum3"></span></p>
+    <!-- <script>
+        function sumOfThreeParameters(a, b, c) {
+            return a + b + c;
+        }
+        let param1 = 1;
+        let param2 = 2;
+        let param3 = 3;
+        document.getElementById("sum3").innerHTML = sumOfThreeParameters(param1, param2, param3);
+    </script> -->
+    <h3>Test 7</h3>
+    <p>Sqrt root of 3 numbers is <span id="sqrt"></span></p>
+    <!-- <script>
+        function sqrt(num) {
+            return Math.sqrt(num);
+        }
+        let sqrt3 = sqrt(3);
+        let sqrt4 = sqrt(4);
+        document.getElementById("sqrt").innerHTML = sqrt3 + sqrt4;
+    </script> -->
+    <h3>Test 8</h3>
+    <p>Result is <span id="fix"></span></p>
+    <!-- <script>
+        function sqrt1(num) {
+            return Math.sqrt(num);
+        }
+
+        function round2(num) {
+            return num.toFixed(3);
+        }
+        document.getElementById("fix").innerHTML = round2(sqrt1(2));
+    </script> -->
+    <h3>Test 9</h3>
+    <p>Result is <span id="sum4"></span></p>
+    <!-- <script>
+        function sqrt4(num) {
+            return Math.sqrt(num);
+        };
+
+        function sum4(num1, num2, num3) {
+            return num1 + num2 + num3;
+        };
+
+        document.getElementById('sum4').innerHTML = sum4(sqrt4(2), sqrt4(3), sqrt4(4));
+    </script> -->
+    <h3>Test 10</h3>
+    <p>Result is <span id="round4"></span></p>
+    <!-- <script>
+        function round4(num) {
+            return num.toFixed(3);
+        }
+        document.getElementById("round4").innerHTML = round4(sum4(sqrt4(2), sqrt4(3), sqrt4(4)));
+    </script> -->
+    <h3>Test 11</h3>
+    <p>Number of iterations <span id="iSum"></span></p>
+    <!-- <script>
+        function test11() {
+            let i = 0;
+            let number = prompt('Введите число', '');
+            while (number > 10) {
+                number = number / 2;
+                i++;
+            }
+            return i;
+        };
+        console.log(test12())
+        document.getElementById('iSum').innerHTML = test11();
+    </script> -->
+    <h3>Test 12</h3>
+    <p>Sum of elements <span id="test12"></span></p>
+    <!-- <script>
+        function test12(arr) {
+            let sum = 0;
+            for (let elem of arr) {
+                sum += elem * elem;
+            }
+            return sum;
+        }
+        let arr = [5, 3, 4];
+        document.g
+    </script> -->
+    <h3>Test 13</h3>
+    <p>Del of elements <span id="test12"></span></p>
+    <!-- <script>
+        let elem = 5;
+        const arr1 = [1, 5, 12, 17, 20, 5, 7, 13, 5];
+        const newArr1 = [];
+        let indexOfElem = arr1.indexOf(5);
+
+        function delElem() {
+
+
+            for (let i = 0; i < arr1.length; i += 1) {
+
+                if (arr1[i] !== elem) {
+                    newArr1[i] = arr1[i];
+                    arr1.splice(indexOfElem, arr1.length);
+                }
+                // else {
+                //     arr1.splice(indexOfElem, arr1.length);
+                // }
+            }
+            return newArr1;
+        }
+        console.log(delElem());
+    </script> -->
+    <h3>Test 14</h3>
+    <p>Del of elements <span id="test14"></span></p>
+    <!-- <script>
+        let max = prompt('Введите максимальное число массива', '');
+        let arrMax = [];
+
+        function newArrMax() {
+            for (let i = 1; i <= max;) {
+                arrMax.push(i++)
+            }
+            return arrMax;
+        }
+        document.getElementById("test14").innerHTML = newArrMax();
+    </script> -->
+    <h3>Test 15</h3>
+    <p>Del of elements <span id="test15"></span></p>
+    <script>
+        let rangeArray = [];
+
+        function rangeArr(startArr, endArr) {
+            for (let i = startArr; i <= endArr;) {
+                rangeArray.push(i++);
+            }
+            return rangeArray;
+        }
+        document.getElementById('test15').innerHTML = rangeArr(10, 15);
+    </script>
+    <h2>Flags</h2>
+    <h3>Test f1</h3>
+    <p>Array is <span id="f1"></span></p>
+    <!-- <script>
+        let fArr = [2, 10, -50, 10]
+
+        function elemArr() {
+            for (let elem of fArr) {
+                if (elem % 2 !== 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        console.log(elemArr());
+        document.getElementById("f1").innerHTML = elemArr();
+    </script> -->
+    <h3>Test f2</h3>
+    <p>Array is <span id="f2"></span></p>
+    <script>
+        let fNum = prompt("Input big number", "");
+        let fArr2 = fNum.toString().split("");
+        console.log(fArr2);
+
+        function negNumer() {
+            for (let elem of fArr2) {
+                if (elem % 2 == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        console.log(negNumer());
+        document.getElementById("f2").innerHTML = negNumer();
+    </script>
+    <h3>Test f3</h3>
+    <p>Array is <span id="f3"></span></p>
+    <script>
+        let fArr3 = [1, -2, -2, 3, 10, 10, 12, 15];
+
+        function twoSimilarNumb() {
+            for (let i = 0; i < fArr3.length; i++) {
+
+                if (fArr3[i] == fArr3[i + 1]) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        console.log(twoSimilarNumb());
+    </script>
+</body>
+</html

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- 337 -->
+    <!-- <p id="elem1">1</p>
+<p id="elem2">2</p>
+<p id="elem3">3</p> -->
+    <!-- <script>
+        let elem1 =  document.getElementById('elem1');
+        let elem2 =  document.querySelector('#elem2');
+        let elem3 =  document.querySelector('#elem3');
+console.log(elem1);
+console.log(elem2);
+console.log(elem3);
+    </script> -->
+
+    <!-- 338 -->
+    <!-- <div id="block">
+        <p>1</p>
+        <p>2</p>
+    </div>
+    <script>
+        let p = document.querySelector('#block p');
+        console.log(p);
+    </script> -->
+
+    <!-- 338 -->
+    <!-- <input id="button1" type="submit"> -->
+<input id="button2" type="submit">
+<input id="button3" type="submit">
+<script>
+    let button1 = document.querySelector('#button1');
+    let button2 = document.querySelector('#button2');
+    let button3 = document.querySelector('#button3');
+
+    button1.addEventListener('click', function(){
+alert('1');
+    });
+    button2.addEventListener('click', function(){
+alert('2');
+    });
+    button3.addEventListener('click', function(){
+alert('3');
+    });
+</script> 
+
+<!-- 342 -->
+<!-- <input id="button1" type="submit" value="button1">
+<input id="button2" type="submit" value="button2"> -->
+<!-- 
+<script>
+    function func1() {
+	console.log(1);
+}
+
+function func2() {
+	console.log(2);
+}
+document.querySelector('#button1').addEventListener("click", func1);
+document.querySelector('#button2').addEventListener("click", func2);
+</script> -->
+
+<!-- 343 -->
+<!-- <p id="elem1">text</p>
+<p id="elem2">text</p>
+<p id="elem3">text</p>
+<p id="elem4">text</p>
+<p id="elem5">text</p>
+<script>
+    let elem1 = document.querySelector('#elem1');
+    let elem2 = document.querySelector('#elem2');
+    let elem3 = document.querySelector('#elem3');
+    let elem4 = document.querySelector('#elem4');
+    let elem5 = document.querySelector('#elem5');
+    function func() {
+	console.log('message');
+}
+elem1.addEventListener('click', func);
+elem2.addEventListener('click', func);
+elem3.addEventListener('click', func);
+elem4.addEventListener('click', func);
+elem5.addEventListener('click', func);
+
+</script> -->
+
+<!-- 344 -->
+<!-- <p id="elem">text</p>
+<script>
+function func1() {
+	console.log('1');
+}
+
+function func2() {
+	console.log('2');
+}
+
+function func3() {
+	console.log('3');
+}
+    let elem = document.querySelector("#elem");
+    elem.addEventListener("click", func1);
+    elem.addEventListener("click", func2);
+    elem.addEventListener("click", func3);
+</script> -->
+
+<!-- 345 -->
+<!-- <button id="button1">Button 1</button>
+<button id="button2">Button 2</button>
+<button id="button3">Button 3</button>
+<button id="button4">Button 4</button>
+<script>
+    let button1 = document.querySelector("#button1");
+    let button2 = document.querySelector("#button2");
+    let button3 = document.querySelector("#button3");
+    let button4 = document.querySelector("#button4");
+
+    button1.addEventListener("dblclick", function () {
+        console.log("double click");
+    });
+    button2.addEventListener("mouseover", function () {
+        console.log("hi");
+    });
+    button3.addEventListener("mouseout", function () {
+        console.log("bye");
+    });
+    button4.addEventListener("mouseover", function () {
+        console.log("hello");
+    });
+    button4.addEventListener("mouseout", function () {
+        console.log("good bye");
+    });
+</script> -->
+
+<!-- 346.1 -->
+<!-- <p id="text">Hello word</p>
+<button id="button">show text</button>
+<script>
+    let text = document.querySelector("#text");
+    let button = document.querySelector("#button");
+     button.addEventListener('click', function () {
+        console.log(text.textContent);
+     });
+</script> -->
+<!-- 346.2 -->
+<!-- <p id="text2"> text1</p>
+<button id="button2" type="button">change text</button>
+<script>
+    let text2 = document.querySelector('#text2');
+let button2 = document.querySelector('#button2');
+button2.addEventListener('click', function () {
+    text2.textContent = 'text changed';
+});
+</script> -->
+
+<!-- 346.3 -->
+
+<!-- <p id="paragraph">43</p>
+<p id="paragraph2">56</p>
+<button id="button3">sum</button>
+<script>
+    let par1 = document.querySelector('#paragraph').textContent;
+    let par2 = document.querySelector('#paragraph2').textContent;
+    let button3 = document.querySelector('#button3');
+     button3.addEventListener('click', function () {
+        console.log(+par1 + +par2);
+     });
+</script> -->
+
+<!-- 346.4 -->
+<!-- 
+<p id="paragraph">43</p>
+<p id="paragraph2">56</p>
+<button id="button3">sum</button>
+<div id="suma"></div>
+<script>
+    let par1 = document.querySelector('#paragraph').textContent;
+    let par2 = document.querySelector('#paragraph2').textContent;
+    let sum = document.querySelector('#suma');
+    let button3 = document.querySelector('#button3');
+    
+    button3.addEventListener('click', function () {
+        suma.textContent = +par1 + +par2;
+     });
+</script> -->
+<!-- 346.5 -->
+<!-- <p id="paragraph">43</p>
+<button id="button">add</button>
+<script>
+    let par1 = document.querySelector('#paragraph');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        par1.textContent = +par1.textContent + 1;
+     });
+</script> -->
+
+<!-- 347.1 -->
+<!-- <p id="paragraph">text</p>
+<button id="button">show</button>
+
+<script>
+    let par = document.querySelector('#paragraph');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        console.log(par.innerHTML);
+     });
+</script> -->
+
+<!-- 347.2 -->
+<!-- <p id="paragraph">text</p>
+<button id="button">bold text</button>
+
+<script>
+    let par = document.querySelector('#paragraph');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+      par.innerHTML = '<b>text2</b>';
+     });
+</script> -->
+
+<!-- 348.1 -->
+<!-- <p id="paragraph">text</p>
+<button id="button">bold text</button>
+
+<script>
+    let par = document.querySelector('#paragraph');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+      par.innerHTML = '<b>text2</b>';
+     });
+</script> -->
+
+<!-- 348.1 -->
+<!-- <input id="elem" type="email">
+<button id="button">show type</button>
+<script>
+    let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        alert(elem.type);
+    });
+</script> -->
+
+<!-- 348.2 -->
+<!-- <input id="elem" type="email">
+<button id="button">change type</button>
+<script>
+    let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        elem.type = 'submit';
+    });
+</script> -->
+
+<!-- 348.3 -->
+<!-- <a href="https://onedev.net/post/458" id="link">go to</a>
+<button id="button">show link</button>
+<p id="par"></p>
+<script>
+    let elem = document.querySelector('#link');
+    let button = document.querySelector('#button');
+    let par = document.querySelector('#par');
+    button.addEventListener('click', function () {
+        par.innerHTML = elem.href;
+    });
+</script> -->
+
+<!-- 348.4 -->
+<!-- <a href="https://onedev.net/post/458" id="link">go to</a>
+<button id="button">show link</button>
+
+<script>
+    let link = document.querySelector('#link');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        link.innerHTML += ' (' + link.href + ')';
+    });
+</script> -->
+<!-- 348.5 -->
+<!-- <img src="/img2.akspic.ru-betmen-supergeroj-komiksy_dc-komiksy-kino-2160x3840.jpg" alt="" id="img" width="200">
+<p id="img-link"></p>
+<button id="button">add way</button>
+
+<script>
+    let img = document.querySelector('#img');
+    let imgLink = document.querySelector('#img-link');
+    let button = document.querySelector('#button');
+
+    button.addEventListener('click', function () {
+       imgLink.innerHTML = img.src;
+    });
+</script> -->
+
+<!-- 348.6 -->
+<!-- <img src="/img2.akspic.ru-betmen-supergeroj-komiksy_dc-komiksy-kino-2160x3840.jpg" alt="" id="img" width="200">
+<button id="button">change size</button>
+
+<script>
+    let img = document.querySelector('#img');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+       img.width = 300;
+    });
+</script> -->
+<!-- 348.7 -->
+<!-- <div style="display: flex; flex-direction: column;">
+    <div style="margin-bottom: 50px;">
+        <button id="button-bat">show Batman</button>
+        <button id="button-sup">show Superman</button> 
+    </div>
+
+    <img src="" alt="" id="img" width="500">
+    
+</div>
+<script>
+    let img = document.querySelector('#img');
+    let buttonBat = document.querySelector('#button-bat');
+    let buttonSup = document.querySelector('#button-sup');
+    buttonBat.addEventListener('click', function () {
+      img.src = '/batman.png';
+    });
+    buttonSup.addEventListener('click', function () {
+      img.src = '/henry-cavill.webp';
+    });
+</script> -->
+
+<!-- 349.1 -->
+<!-- <input type="text" id="input">
+<button id="button">add text</button>
+
+<script>
+    let input = document.querySelector('#input');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+     input.value = "hi"   
+    })
+</script> -->
+
+<!-- 349.2 -->
+<!-- <div style="display: flex;">
+    <input type="text" id="input">
+    <button id="button">add text</button>
+</div>
+<p id="par"></p>
+<script>
+    let input = document.querySelector('#input');
+    let button = document.querySelector('#button');
+    let par = document.querySelector('#par');
+    button.addEventListener('click', function () {
+     par.textContent = input.value; 
+    });
+</script> -->
+
+<!-- 349.3 -->
+<!-- <div style="display: flex;">
+    <input type="text" id="input">
+    <button id="button">add text</button>
+</div>
+<input type="text" id="input2">
+<script>
+    let input = document.querySelector('#input');
+    let input2 = document.querySelector('#input2');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+     input2.value = input.value*input.value; 
+    });
+</script> -->
+
+<!-- 349.4 -->
+<!-- <div style="display: flex;">
+    <input type="text" id="input">
+    <button id="button">add text</button>
+</div>
+<input type="text" id="input2">
+<script>
+    let input = document.querySelector('#input');
+    let input2 = document.querySelector('#input2');
+    
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        let buff = input.value; 
+     input.value = input2.value; 
+     input2.value = buff;
+    });
+</script> -->
+
+<!-- 350.1 -->
+<!-- <input type="text" id="input"> -->
+
+<!-- <script>
+    let input = document.querySelector('#input');
+
+    input.addEventListener('focus', function () {
+        input.value = 2;
+    });
+    input.addEventListener('blur', function () {
+        input.value = 1;
+    });
+</script> -->
+
+
+<!-- 350.2 -->
+
+<!-- <input type="text" id="input">
+
+<script>
+    let input = document.querySelector('#input');
+
+   
+    input.addEventListener('blur', function () {
+       alert(input.value*input.value);
+    });
+</script> -->
+
+<!-- 350.3 -->
+<!-- 
+<input type="text" id="input" value="text">
+
+<script>
+    let input = document.querySelector('#input');
+   
+    input.addEventListener('focus', function () {
+       input.value ='';
+    });
+</script> -->
+
+<!-- 351.1 -->
+<!-- <div id="elem" class="content no-gap"></div>
+<button id="button">show class</button>
+<script>
+   let input = document.querySelector('#elem');
+   let button = document.querySelector('#button');
+   button.addEventListener('click', function () {
+    alert(input.className);
+   })
+</script> -->
+
+<!-- 351.2 -->
+<!-- <div id="elem" >div</div>
+<button id="button">add class</button>
+<script>
+   let input = document.querySelector('#elem');
+   let button = document.querySelector('#button');
+   button.addEventListener('click', function () {
+    input.className = "input-class";
+   })
+</script> -->
+
+<!-- 351.3 -->
+<!-- <div id="elem" class="aaa bbb ccc"></div>
+<button id="button">button</button>
+<script>
+     let div = document.querySelector('#elem');
+     let button = document.querySelector('#button');
+
+     button.addEventListener('click', function () {fcv
+        console.log(div.classList);
+     })
+</script> -->
+
+<!-- 354.1 -->
+<!-- <input id="input"></input>
+<script>
+    let input = document.querySelector('#input');
+
+    input.addEventListener('blur', funcBlur);
+    input.addEventListener('focus', funcFocus);
+    function funcBlur() {
+        this.value = 2;
+    };
+    function funcFocus() {
+        this.value = 1;
+    };
+</script> -->
+
+<!-- 354.2 -->
+<!-- <button id="button">1</button>
+<script>
+    let button = document.querySelector('#button');
+    button.addEventListener('click', growth);
+    function growth() {
+        this.textContent = +this.textContent + 1;
+    }
+</script> -->
+
+<!-- 355.1 -->
+<!-- 
+<p id="par1">text1</p>
+<p id="par2">text2</p>
+<p id="par3">text3</p>
+<p id="par4">text4</p>
+<p id="par5">text5</p>
+
+<script>
+    let par1 = document.querySelector('#par1');
+    let par2 = document.querySelector('#par2');
+    let par3 = document.querySelector('#par3');
+    let par4 = document.querySelector('#par4');
+    let par5 = document.querySelector('#par5');
+
+    par1.addEventListener("click", addText);
+    par2.addEventListener("click", addText);
+    par3.addEventListener("click", addText);
+    par4.addEventListener("click", addText);
+    par5.addEventListener("click", addText);
+
+    function addText() {
+        this.textContent = this.textContent +'!';
+    }
+</script> -->
+
+<!-- 355.2 -->
+<!-- <input type="text" id="input1" value="9">
+<input type="text" id="input2" value="12">
+<input type="text" id="input3" value="5">
+<script>
+    let input1 =  document.querySelector('#input1');
+    let input2 =  document.querySelector('#input2');
+    let input3 =  document.querySelector('#input3');
+
+    input1.addEventListener('blur', funcSquare);
+    input2.addEventListener('blur', funcSquare);
+    input3.addEventListener('blur', funcSquare);
+
+    function funcSquare() {
+        this.value *= this.value;
+    }
+</script> -->
+
+<!-- 356.1 -->
+
+<!-- <p class="par"></p>
+<p class="par"></p>
+<p class="par"></p>
+<button id="button">push</button>
+<script>
+let pars =  document.querySelectorAll('.par');
+let button =  document.querySelector('#button');
+
+button.addEventListener('click', pushText);
+
+function pushText() {
+    for (let elem of pars) {
+        elem.textContent = 'text';
+    };
+};
+</script> -->
+
+<!-- 356.2 -->
+<!-- <p class="par">par</p>
+<p class="par">par</p>
+<p class="par">par</p>
+<p class="par">par</p>
+<p class="par">par</p>
+<p class="par">par</p>
+<button id="button">push</button>
+<script>
+let pars =  document.querySelectorAll('.par');
+let button =  document.querySelector('#button');
+
+button.addEventListener('click', pushText);
+
+function pushText() {
+    let num = 1;
+    for (const par of pars) {
+      par.textContent = par.textContent + ' '+ num;
+      num+=1;
+    }
+};
+</script> -->
+
+<!-- 356.3 -->
+<!-- <input type="text" class="input" value="3">
+<input type="text" class="input" value="53">
+<input type="text" class="input" value="27">
+<input type="text" class="input" value="41">
+<input type="text" class="input" value="13">
+<button id="button">sum</button>
+<p class="sum"></p>
+<script>
+let pars =  document.querySelectorAll('.input');
+let button =  document.querySelector('#button');
+let sum =  document.querySelector('.sum');
+
+button.addEventListener('click', count);
+
+function count() {
+    let suma = 0;
+    for (const par of pars) {
+     suma = suma + +par.value;
+    };
+sum.textContent = suma;
+};
+</script> -->
+
+<!-- 357.1 -->
+<input type="text" class="input" value="34">
+<input type="text" class="input" value="27">
+<input type="text" class="input" value="53">
+
+<script>
+    function func() {
+	this.value = Number(this.value) + 1;
+}
+let inputs = document.querySelectorAll('.input');
+for (input of inputs) {
+    input.addEventListener('blur', func);
+}
+
+let buttonSwitch = document.querySelectorAll('.example-toggle');
+let chartOpen = document.querySelectorAll('.exam-graph ');
+ function func() {
+    console.log(22);
+        this.classList.remove('active');
+};
+
+for (const button of buttonSwitch) {
+    button.addEventListener('click', func);
+};
+</script>
+
+<!-- 357.2 -->
+
+<!-- <p class="par">8</p>
+<p class="par">37</p>
+<p class="par">20</p>
+<p class="par">3</p>
+<p class="par">13</p>
+<p class="par">14</p>
+<p class="par">28</p>
+<p class="par">50</p>
+
+<script>
+    function func() {
+	this.textContent = Number(this.textContent)*Number(this.textContent);
+}
+let pars = document.querySelectorAll('.par');
+for (let par of pars) {
+    par.addEventListener('click', func);
+}
+</script> -->
+
+<!-- 358 -->
+<!-- <div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<script>
+let divs = document.querySelectorAll('div');
+
+for (let div of divs) {
+	div.addEventListener('click', function () {
+	this.textContent++;});
+}
+</script> -->
+
+<!-- 359 -->
+<!-- <a id="link" href="http://code.mu/ru/javascript/book/prime/dom/basis/handlers-unbinding/" target="_blank">code.mu</a>
+<script>
+let link = document.querySelector('#link');
+
+link.addEventListener('click', func)
+
+function func() {
+    link.textContent += ' (' + link.href + ')';
+    this.removeEvcntListener('click', func);
+};
+</script> -->
+
+<!-- 360.1 -->
+<!-- <ul>
+    <li class="lis">20</li>
+    <li class="lis">30</li>
+    <li class="lis">40</li>
+    <li class="lis">50</li>
+    <li class="lis">60</li>
+</ul>
+<script>
+    let lis = document.querySelectorAll('.lis');
+
+    for (let li of lis) {
+        li.addEventListener('click', function func() {
+            li.textContent++;
+})}
+</script> -->
+
+<!-- 360.2 -->
+<!-- 
+<ul>
+    <li class="lis">20</li>
+    <li class="lis">30</li>
+    <li class="lis">40</li>
+    <li class="lis">50</li>
+    <li class="lis">60</li>
+</ul>
+<script>
+    let lis = document.querySelectorAll('.lis');
+
+    for (let li of lis) {
+        li.addEventListener('click', function func() {
+            li.textContent++;
+            this.removeEventListener('click', func);
+})}
+</script> -->
+
+<!-- 360.3 -->
+<!-- <ul>
+    <li class="lis">2</li>
+    <li class="lis">3</li>
+    <li class="lis">40</li>
+    <li class="lis">50</li>
+    <li class="lis">6</li>
+</ul>
+<script>
+    let lis = document.querySelectorAll('.lis');
+
+    for (let li of lis) {
+        li.addEventListener('click', function func() {
+            if (li.textContent < 10) {
+                li.textContent++; 
+        };
+            this.removeEventListener('click', func);
+})}
+</script> -->
+<!-- 361 -->
+
+<ul>
+	<li>2000</li>
+	<li>2004</li>
+	<li>2021</li>
+	<li>2022</li>
+	<li>2025</li>
+	<li>2031</li>
+</ul>
+
+<script>
+    let numbs = document.querySelectorAll('li');
+let sum = 0;
+for (let numb of numbs) {
+console.log(numb.textContent.split(''))
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 2 -->
+    <script>
+      class Employee {
+        write() {
+          return "hello word";
+        };
+        show(name, salary){
+            return name + '-' + 'salary'+": " + salary;
+        }
+        show2(){
+            console.log(this.name, this.salary)
+        }
+        showName(){
+            console.log(this.name);
+        }
+        showSalary(){
+            console.log(this.salary);
+        }
+      }
+      const worker = new Employee();
+      // console.log (worker);
+      // 3
+      worker.name = "Jon";
+      worker.age = "39";
+      worker.salary = "1000";
+      console.log(worker.name, worker.age, worker.salary);
+      // 4
+      const worker2 = new Employee();
+      const worker3 = new Employee();
+
+      worker2.name = "Kron";
+      worker2.salary = "1500";
+
+      worker3.name = "Nick";
+      worker3.salary = "1750";
+      console.log(+worker.salary + +worker2.salary + +worker3.salary);
+      // 5
+      console.log(worker.write());
+    //   6
+    console.log(worker.show('Jon', '1500'));
+    // 7
+    worker2.show2();
+    worker3.show2();
+    // 8
+    worker.showName();
+    worker.showSalary();
+    //8
+    class Student{
+        case(str){
+            return str[0].toUpperCase()
+        }
+        showInitials(){
+            return this.case(this.name) + '.' + this.case(this.surname)+'.';
+        }
+    }
+    let firstStudent = new Student;
+    firstStudent.name = 'klim';
+    firstStudent.surname = 'Sim';
+   console.log(firstStudent.showInitials());
+ /* 9.1/2 */
+class Student2{
+    name = "Skot";
+    surname = "Shot";
+}
+let student2 = new Student2;
+console.log(student2.name+' '+student2.surname);
+// 10.1
+class Employee3{
+    constructor(){
+        console.log('3 employee');
+    }
+}
+// 11
+class Employee4{
+    constructor(name, salary){
+        console.log(name +'-' +salary);
+    }
+}
+new Employee4("Tom", 2500);
+// 12
+class Employee5{
+    constructor(name,salary){
+        this.name = name;
+        this.salary = salary;
+    }
+    showName2(){
+       return this.name;
+    }
+    showSalary2(){
+        return this.salary;
+    }
+    growSalary(){
+        return this.salary*1.1;
+    }
+}
+let empl = new Employee5('Tim', '3600');
+console.log (empl.showName2(), empl.showSalary2(), empl.growSalary() );
+// 13
+class Employee6{
+    #name;
+    #salary;
+    #age;
+    constructor(name, salary, age){
+        this.#name = name;
+        this.#salary = salary;
+        this.#age = age;
+    }
+    showInfo(){
+        return this.#name + ' ' + this.#salary + ' ' + this.#age;
+    }
+}
+let worker4 = new Employee6( 'Skott', 4500, 38);
+console.log (worker4.showInfo());
+// 14
+class Employee7 {
+	constructor(name, salary) {
+		this.name = name;
+		this.salary = salary;
+	}
+	
+	getSalary() {
+		return this.#addSign(this.salary);
+	}
+	
+	#addSign(num) {
+		return num + '$';
+	}
+}
+let worker5 = new Employee7('John', 4500);
+console.log(worker5.getSalary());
+// 16
+class Employee8{
+    #name;
+    #salary;
+    #age;
+    constructor(name, salary, age){
+        this.#name = name;
+        this.#salary = salary;
+        this.#age = age;
+    }
+    getName(){
+        return this.#name;
+    }
+    getSalary(){
+        return this.#salary;
+    }
+    getAge(){
+        return this.#age
+    }
+}
+let worker6 = new Employee8('Frank', 5000, 36);
+console.log(worker6.getName());
+console.log(worker6.getSalary());
+console.log(worker6.getAge());
+// 17
+class Employee9{
+    #name;
+    #salary;
+    setName(name){
+        this.#name = name;
+    }
+    setSalary(salary){
+        this.#salary = salary;
+    }
+    getName(){
+        return this.#name;
+    }
+    getSalary(){
+        return this.#salary;
+    }
+   
+}
+let worker9 = new Employee9;
+worker9.setName('John');
+worker9.setSalary(5000);
+console.log(worker9.getName());
+console.log(worker9.getSalary());
+    </script>
+  </body>
+</html>

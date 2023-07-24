@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Objects</h1>
+    <a href="tel:+"></a>
+    <script>
+        // 80
+        let obj = {1:"Sun", 2:"Mon", 3:"Tue", 4:"Wed", 5:"Thu", 6:"Fri", 7:"Sat"}
+        // console.log(obj[1]);
+        // console.log(obj[2]);
+        // console.log(obj[3]);
+        // console.log(obj[4]);
+        // console.log(obj[5]);
+        // console.log(obj[6]);
+        // console.log(obj[7]);
+
+        // 82
+        let user = { 'name':'Yulia', 'surname':"Sonychna", 'patronymic':"Volodymyrivna"}
+        console.log(user['surname']+ " " + user["name"]+ " "+ user['patronymic']);
+
+        // 83
+        let date = {
+            'year':"2023",
+            'month':"06",
+            'day':'18'
+        }
+        console.log(date.year + "-"+ date.month+"-"+date.day);
+        // 85
+        let obj85 = {x: 1, y: 2, z: 3};
+        obj85.x*=obj85.x;
+        obj85.y*=obj85.y;
+        obj85.z*=obj85.z;
+        console.log(obj85);
+
+        // 86
+        let obj86 = {};
+        obj86['day'] ="Sunday";
+        obj86['time'] ="summertime";
+        obj86['mood'] = 'saddness';
+        console.log(obj86);
+
+        </script>
+</body>
+</html>
